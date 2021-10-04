@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cadastro">
+
+    <ImageView
+        android:id="@+id/fundoCadastro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.9"
+        android:scaleX="1.6"
+        android:scaleY="1.6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ww_fundo" />
+
+    <View
+        android:id="@+id/painelCadastro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/verde_fundo"
+        app:layout_constraintBottom_toBottomOf="@+id/fundoCadastro"
+        app:layout_constraintEnd_toEndOf="@+id/fundoCadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoCadastro"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/painelCadastro"
+        app:layout_constraintStart_toStartOf="@+id/painelCadastro"
+        app:layout_constraintTop_toTopOf="@+id/painelCadastro"
+        app:srcCompat="@drawable/ww_titulo_sf" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/baloo"
+        android:text="Email:"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/painelCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/logoCadastro" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/baloo_bhai"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/verde_claro"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewEmail"
+        app:layout_constraintEnd_toEndOf="@+id/painelCadastro"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmail" />
+
+    <TextView
+        android:id="@+id/textViewUsuario0"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="Usuário"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/painelCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+    <TextView
+        android:id="@+id/textViewSenha1"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="Senha"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/painelCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsuario0" />
+
+    <TextView
+        android:id="@+id/textViewSenha2"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="Senha"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/painelCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSenha1" />
+
+    <EditText
+        android:id="@+id/editTextUsuario0"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/baloo_bhai"
+        android:hint="Usuário"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/verde_claro"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewUsuario0"
+        app:layout_constraintEnd_toEndOf="@+id/painelCadastro"
+        app:layout_constraintStart_toEndOf="@+id/textViewUsuario0" />
+
+    <EditText
+        android:id="@+id/editTextSenha1"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/baloo_bhai"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/verde_claro"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewSenha1"
+        app:layout_constraintEnd_toEndOf="@+id/painelCadastro"
+        app:layout_constraintStart_toEndOf="@+id/textViewSenha1" />
+
+    <EditText
+        android:id="@+id/editTextSenha2"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/baloo_bhai"
+        android:hint="Confirmar senha"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/verde_claro"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewSenha2"
+        app:layout_constraintEnd_toEndOf="@+id/painelCadastro"
+        app:layout_constraintStart_toEndOf="@+id/textViewSenha2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRobo"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="35dp"
+        android:buttonTint="@color/white"
+        android:checked="false"
+        android:fontFamily="@font/baloo"
+        android:text="Eu não sou um robô"
+        android:textColor="@color/white"
+        android:textColorLink="@color/verde_claro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/painelCadastro"
+        app:layout_constraintStart_toStartOf="@+id/painelCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSenha2" />
+
+    <View
+        android:id="@+id/sizeCadastro"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/painelCadastro"
+        app:layout_constraintEnd_toEndOf="@+id/painelCadastro"
+        app:layout_constraintStart_toStartOf="@+id/painelCadastro" />
+
+    <Button
+        android:id="@+id/buttonCadastro"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/verde_claro"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Cadastrar"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/painelCadastro"
+        app:layout_constraintEnd_toStartOf="@+id/sizeCadastro"
+        app:layout_constraintStart_toStartOf="@+id/painelCadastro" />
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/verde_claro"
+        android:fontFamily="@font/baloo_bhai"
+        android:onClick="cancelar"
+        android:text="Cancelar"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/painelCadastro"
+        app:layout_constraintEnd_toEndOf="@+id/painelCadastro"
+        app:layout_constraintStart_toEndOf="@+id/sizeCadastro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
