@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         nome = findViewById(R.id.editTextUsuario);
         senha = findViewById(R.id.editTextSenha);
         Usuario u = new Usuario();
-        u.setNome("admin");
-        u.setSenha("admin");
+        u.setNome("s");
+        u.setSenha("s");
         u.setEmail("admin@gmail.com");
         u.setVip_ou_free(false);
         r.listaUsuarios.add(u);

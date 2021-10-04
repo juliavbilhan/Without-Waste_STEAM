@@ -163,6 +163,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/verde_claro"
         android:fontFamily="@font/baloo_bhai"
+        android:onClick="voltar"
         android:text="Voltar"
         app:layout_constraintBottom_toBottomOf="@+id/painelSelecao"
         app:layout_constraintEnd_toEndOf="@+id/painelSelecao"

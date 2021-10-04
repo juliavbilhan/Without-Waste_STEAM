@@ -72,7 +72,6 @@ public class Cadastro extends AppCompatActivity {
             }
         }catch(Exception e){
             Toast.makeText(Cadastro.this, "Erros: " + e.toString(), Toast.LENGTH_LONG).show();
-            //Toast.makeText(Cadastro.this, "Caiu no Catch dnv, arruma isso logo", Toast.LENGTH_LONG).show();
         }
     }
 
